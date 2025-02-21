@@ -1,0 +1,3 @@
+my programming goals(cloud computing specifically): 1. learn the basics of cloud platforms-AWS, Azure or Google cloud.
+2. Deploy a simple cloud application -  host a website or service using cloud resources.
+3. Understand cloud security and networking.
