@@ -1,22 +1,24 @@
-# command-line-basics
-This repository contains files and screenshots demonstrating basic Linux commands such as creating directories, subdirectories, files etc.
-## commands used
-1. 'mkdir projects' - to create a directory named 'projects'
-2. 'pwd' - to print working directory to confirm I am in the right directory
-3. 'ls projects' - to list the contents under projects
-4. 'cd projects' - to move into the projects directory
-5. 'mkdir week1 week2' - to create two subfolders, week1 and week2
-6. 'ls' - to list the contents under projects and verify that the subfolders have been created successfully
-7. 'cd week1' - to move into the week1 directory
-8. 'touch hello.txt' - to create an empty file named 'hello.txt' inside week1
-9. 'ls' - to list the contents of week1 and confirm that hello.txt was created
-10. 'cp hello.txt ../week2/hello_copy.txt' - to copy hello.txt to week2 and rename
-11. 'cd ../week2' - to navigate to week2 directory
-12. 'ls' - to list and confirm the content of week2 directory
-13. 'cd ../week1' - to navigate back to week1
-14. 'rm hello.txt' - to delete the original hello.txt file from week1
-15. 'ls' - to verify the deletion
-16. 'vim about_me.txt' - to create and edit a file named 'about_me.txt'
-## screenshots 
-screenshots of the terminal demonstrating  each command are included in this repository.
-
+# command-Line Basics - week2
+This README contains the git commands I used during this week's assignment and their outputs.
+## initialize a git repository
+'cd projects' - to move into the projects folder from week1
+output: confirms 
+'git init' - to initialize or set up a new git repository in the projects folder which allows git to track changes.
+## Add and commit files
+'git add .' - stages all files for the next commit
+'git commit -m "initial commit" - saves the staged changes with a message.
+## Push to github
+I created a new repository named 'my-first-project manually on github
+'git remote add origin https://github.com/graciousjoe/command-line-basics/blob/main/my-first-project' - connects the local repository to github
+'gitpush -u origin main' - sends the committed files to github
+## practice cloning
+'git clone https://github.com/graciousjoe/command-line-basics/blob/main/my-first-project' - downloads a copy of the repository to a new location
+## modify and push changes
+'touch goals.txt'  - to add a new file named goals.txt
+'echo "my programming goals(cloud computing specifically): 1. learn the basics of cloud platforms-AWS, Azure or Google cloud.
+'echo "2. Deploy a simple cloud application -  host a website or service using cloud resources."
+'echo "3. Understand cloud security and networking."
+creates and adds text to the goals.txt file
+'git add goals.txt' - to add the file to github
+'git commit -m "Added my programming goals(cloud computinng specifically)"
+'git push origin main' - uploaded it to main branch on github
